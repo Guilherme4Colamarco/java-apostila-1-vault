@@ -1,0 +1,10 @@
+# Java bytecode & build outputs
+*.class
+**/build/
+**/dist/
+**/nbproject/private/
+**/.nb-cache/
+
+# OS and temp
+.DS_Store
+Thumbs.db

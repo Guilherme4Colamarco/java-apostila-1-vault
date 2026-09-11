@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"titulo","type":"text","text":"# Livro\nControla a disponibilidade para empréstimo","x":0,"y":0,"width":340,"height":120,"color":"4"},
+		{"id":"estado","type":"text","text":"## Estado\n- titulo\n- autor\n- disponivel","x":0,"y":180,"width":280,"height":160,"color":"6"},
+		{"id":"emprestar","type":"text","text":"## emprestar()\nO livro está disponível?","x":400,"y":0,"width":300,"height":120,"color":"3"},
+		{"id":"sim","type":"text","text":"**Sim**\ndisponivel = false\n\"Empréstimo realizado\"","x":800,"y":-80,"width":280,"height":130,"color":"4"},
+		{"id":"nao","type":"text","text":"**Não**\nEstado não muda\n\"Livro indisponível\"","x":800,"y":100,"width":280,"height":130,"color":"1"},
+		{"id":"devolver","type":"text","text":"## devolver()\ndisponivel = true\n\"Livro devolvido\"","x":400,"y":220,"width":300,"height":130,"color":"5"},
+		{"id":"exibir","type":"text","text":"## exibirDados()\nMostra título, autor e disponibilidade","x":800,"y":300,"width":300,"height":120,"color":"6"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"titulo","fromSide":"right","toNode":"emprestar","toSide":"left"},
+		{"id":"e2","fromNode":"estado","fromSide":"right","toNode":"devolver","toSide":"left"},
+		{"id":"e3","fromNode":"emprestar","fromSide":"right","toNode":"sim","toSide":"left","label":"sim"},
+		{"id":"e4","fromNode":"emprestar","fromSide":"right","toNode":"nao","toSide":"left","label":"não"},
+		{"id":"e5","fromNode":"devolver","fromSide":"right","toNode":"exibir","toSide":"left"}
+	]
+}

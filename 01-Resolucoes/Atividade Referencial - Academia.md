@@ -23,3 +23,10 @@ Fonte: **Atividade Referencial de Resposta**, publicada no Disco Virtual em 08/0
 ## Resultado esperado do teste
 
 Inicialmente: aluno inativo, plano de R$ 99,90 e pagamento pendente. Depois dos métodos: aluno ativo, plano de R$ 109,90 e pagamento marcado como pago.
+
+
+## Ponte entre `Principal` e as três classes
+
+A `Principal` não é uma “quarta classe de negócio”; ela é a orquestradora do teste. No `main`, deve haver um `new Aluno(...)`, um `new Plano(...)` e um `new Pagamento(...)`. Cada `new` chama o construtor da respectiva classe e cria estados iniciais independentes.
+
+Depois, o `main` chama `ativar()`, `alterarValor(109.90)` e `pagar()` nos objetos certos. O resultado esperado só aparece porque os métodos mudaram atributos do mesmo objeto criado antes. [[02-Conceitos/Fluxo main, construtor e objeto|Fluxo completo]]

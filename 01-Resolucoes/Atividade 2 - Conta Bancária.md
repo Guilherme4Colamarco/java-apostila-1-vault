@@ -32,3 +32,14 @@ public class ContaBancaria {
 ```
 
 **Objeto pedido:** `ContaBancaria conta1 = new ContaBancaria("Carlos", 500.00);`.
+
+
+## Leitura do código: por que ele funciona
+
+- O construtor recebe `saldoInicial` porque uma conta precisa nascer já associada a titular e saldo.
+- `depositar(valor)` usa `valor > 0`: depósito negativo seria, na prática, uma retirada disfarçada.
+- `sacar(valor)` verifica duas condições juntas: o valor deve ser positivo **e** não pode passar do saldo. Só então `saldo -= valor` muda o estado.
+- O retorno `boolean` permite que o `main` saiba se o saque ocorreu. `true` significa sucesso; `false`, falha.
+- `exibirSaldo()` não altera o dinheiro: apenas torna o estado visível.
+
+**Rastro no `main`:** `new ContaBancaria("Carlos", 500.00)` → depositar 200 → sacar 100 → tentar sacar 1000 → exibir. [[02-Conceitos/Fluxo main, construtor e objeto|Como `main` chama o construtor]]

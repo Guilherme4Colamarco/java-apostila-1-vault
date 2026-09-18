@@ -23,3 +23,13 @@ public class Consulta {
 **Objeto pedido:** `new Consulta("Ana", "Dr. Paulo", "10/09/2026", "14:00")`.
 
 A regra escolhida impede confirmar ou reagendar uma consulta cancelada.
+
+
+## Leitura do código: por que ele funciona
+
+- O construtor recebe paciente, médico, data e horário porque são os dados mínimos para uma consulta existir; ele define `situacao = "Agendada"` como estado inicial.
+- Para comparar textos em Java, usa-se `.equals()`, não `==`. Por isso as regras testam `situacao.equals("Cancelada")`.
+- `confirmar()` e `reagendar()` protegem a regra de negócio: consulta cancelada não volta a ser confirmada/reagendada por acidente.
+- `reagendar()` muda data e horário do mesmo objeto e retorna sua situação para agendada.
+
+**Rastro no `main`:** criar → confirmar → exibir → reagendar → exibir → cancelar → exibir. [[02-Conceitos/Fluxo main, construtor e objeto|Como `main` chama o construtor]]

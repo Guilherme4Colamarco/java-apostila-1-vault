@@ -29,3 +29,13 @@ Ingresso ingresso1 = new Ingresso("Show", 80.00);
 ingresso1.usar(); // muda usado para true
 ingresso1.usar(); // informa que já foi utilizado; estado não muda
 ```
+
+
+## Leitura do código: por que ele funciona
+
+- O construtor recebe o que identifica o ingresso (`evento`, `valor`) e inicia `usado` como `false`.
+- `if (!usado)` é a trava principal: só permite a primeira utilização.
+- Depois de `usar()`, o atributo muda para `true`. Na segunda chamada, a condição falha; logo, o estado permanece correto.
+- `exibir()` permite que o `main` mostre se o ingresso ainda pode ser utilizado.
+
+**Rastro no `main`:** criar → exibir → usar → exibir → tentar usar novamente. [[02-Conceitos/Fluxo main, construtor e objeto|Como `main` chama o construtor]]

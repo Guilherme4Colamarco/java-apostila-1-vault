@@ -32,3 +32,9 @@ Livro livro1 = new Livro(); // objeto
 ## Relação entre estado e comportamento
 
 Uma operação pode mudar o estado (`cancelar`, `depositar`) e o estado pode limitar uma operação (`sacar` depende do saldo; `usar` depende de o ingresso ainda não ter sido usado).
+
+
+## Continue a revisão
+
+- [[02-Conceitos/Fluxo main, construtor e objeto|Fluxo: `main` → `new` → construtor → métodos]]
+- [[02-Conceitos/Apostila do professor Roberto - leitura 1x1|Leitura 1×1 do código original do professor Roberto]]

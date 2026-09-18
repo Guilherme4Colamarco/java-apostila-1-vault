@@ -15,6 +15,8 @@
 ## Revisão de conceitos
 
 - [[02-Conceitos/POO - Fundamentos da semana 1]]
+- [[02-Conceitos/Fluxo main, construtor e objeto]]
+- [[02-Conceitos/Apostila do professor Roberto - leitura 1x1|Apostila do professor Roberto — leitura 1×1]]
 
 ## Canvas da lógica
 

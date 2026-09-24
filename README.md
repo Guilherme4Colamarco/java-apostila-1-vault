@@ -21,3 +21,10 @@ Os arquivos oficiais originais e o código-fonte Java extraído agora estão inc
 
 Cada nota contém: interpretação do problema, UML textual, código Java e comportamento esperado. Os fontes Java prontos para execução estão na pasta `04-Codigo-Fonte/Atividades`.
 
+## Instruções para materiais didáticos
+
+- `AGENTS.md` registra as instruções permanentes do vault: fidelidade às fontes e como explicar o código original.
+- `.agents/skills/material-didatico-java/SKILL.md` define o procedimento reutilizável para produzir novas páginas didáticas a partir da apostila.
+- [[02-Conceitos/Como a Principal percorre as oito atividades]] demonstra como seguir cada objeto de `main` até os métodos e as mudanças de estado.
+
+As explicações devem permanecer separadas da transcrição fiel e de qualquer extensão didática. Na versão original do código, as classes de exercícios usam o construtor vazio implícito; construtores parametrizados só devem aparecer identificados como extensão.

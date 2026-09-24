@@ -17,6 +17,12 @@
 - [[02-Conceitos/POO - Fundamentos da semana 1]]
 - [[02-Conceitos/Fluxo main, construtor e objeto]]
 - [[02-Conceitos/Apostila do professor Roberto - leitura 1x1|Apostila do professor Roberto — leitura 1×1]]
+- [[02-Conceitos/Como a Principal percorre as oito atividades|Como a Principal percorre as oito atividades]]
+
+## Instruções para produção de material
+
+- [[AGENTS]] — instruções permanentes deste vault
+- `/.agents/skills/material-didatico-java/SKILL.md` — procedimento reutilizável para gerar material didático a partir da apostila
 
 ## Canvas da lógica
 
@@ -37,4 +43,3 @@
 - **Roteiro Teórico (PDF):** `05-Material-Original/PooRoteiro1.pdf`
 - **Atividade Referencial (DOCX):** `05-Material-Original/Atividadereferencial.docx`
 - **Arquivo ZIP original:** `05-Material-Original/Atividades.zip`
-
